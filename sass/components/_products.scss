@@ -1,5 +1,10 @@
-.conteiner {
-  border: 1px solid black;
+.products-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+  background-image: url(../../images/мороженное/bg-img_s_@1x.png);
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 .products__undertitle {
@@ -55,13 +60,16 @@
 
 .products__item:nth-child(2) {
   background-color: #efd478;
-  margin-bottom: 164px;
   position: relative;
 }
 
 .products__item:nth-child(3) {
   background-color: #d6936d;
   position: relative;
+}
+
+.products__item:not(:last-child) {
+  margin-bottom: 164px;
 }
 
 .products__item:nth-child(1)::before {
@@ -72,11 +80,24 @@
   height: 200px;
   border-radius: 50%;
   top: -100px;
-  background-image: url(../../images/мороженное/products-1_s-@1x.png),
-    linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  background-image: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
+    #d9d9d9;
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
   background-repeat: no-repeat;
-  background-size: 200px, 200px;
+
+  border: none;
+}
+.products__item:nth-child(1)::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  top: -111px;
+  background-image: url(../../images/мороженное/products-3_s-@1x.png);
+  background-repeat: no-repeat;
+
   border: none;
 }
 
@@ -88,11 +109,22 @@
   height: 200px;
   border-radius: 50%;
   top: -100px;
-  background-image: url(../../images/мороженное/products-1_s-@1x.png),
-    linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+  background-image: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
   background-repeat: no-repeat;
-  background-size: 200px, 200px;
+  border: none;
+}
+
+.products__item:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  top: -111px;
+  background-image: url(../../images/мороженное/products-1_s-@1x.png);
+  background-repeat: no-repeat;
   border: none;
 }
 
@@ -104,11 +136,22 @@
   height: 200px;
   border-radius: 50%;
   top: -100px;
-  background-image: url(../../images/мороженное/products-1_s-@1x.png),
-    inear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
+  background-image: inear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
   background-repeat: no-repeat;
-  background-size: 200px, 200px;
+  border: none;
+}
+
+.products__item:nth-child(3)::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  top: -111px;
+  background-image: url(../../images/мороженное/products-2_s-@1x.png);
+  background-repeat: no-repeat;
   border: none;
 }
 
