@@ -1,6 +1,5 @@
 // block 1
 
-
 h1,
 h2,
 h3,
@@ -25,96 +24,36 @@ a {
 }
 
 .conteiner {
-
   // mobile style
- 
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 
-    // outline: 1px solid red;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  // outline: 1px solid red;
 
   // tablet style
   @media screen and (min-width: 768px) {
     max-width: 768px;
   }
 
-  // desktop style 
+  // desktop style
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
   }
 }
 
 .section {
-
   padding-top: 60px;
   padding-bottom: 60px;
-    
 
-    // desktop style 
-    @media screen and (min-width: 1200px) {
-      padding-top: 94px;
-  padding-bottom: 94px;
-    }
-}
-
-/* Заголовки */
-
-.title {
-//   mobile + tablet
-font-size: 28px;
-font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-
-// desktop style 
-  @media screen and (min-width:1200px) {
-    
-   
+  // desktop style
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
-  
-}
-
-.button {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  border-radius: 4px;
-  padding: 10px 32px;
-  width: 200px;
-  border: none;
-  background-color: var(--button-color);
-  color: var(--light-collor);
-  transition-property: background-color color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubic-bezier);
-  cursor: pointer;
-
-  @media screen and (min-width:1200px) {
-  width: 216px; 
-  }
-}
-
-.header-conteiner {
-  display: block;
-  // align-items: center;
-  // height: 80px;
-  // margin-left: auto;
-  // margin-right: auto;
-  // width: 1200px;
-  // padding-left: 15px;
-  // padding-right: 15px;
-}
-
-.conteiner-bottom.portf {
-  margin-bottom: 94px;
 }
 
 .visually__hidden {

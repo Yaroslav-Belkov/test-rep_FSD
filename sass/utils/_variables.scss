@@ -22,15 +22,18 @@
   --icons-color: #AFB1B8;
   --hover-overley: rgba(33, 150, 243, 0.9);
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  --last-font: 'Seymour One', sans-serif; 
 }
 
 
 /* Базовые стили */
 body {
-  font-family: 'Roboto';
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: var(--soft-color);
   letter-spacing: 0.03em;
   background-color: var(--light-collor);
+  
+  
 
 }
