@@ -122,16 +122,32 @@
 .products__item {
   display: flex;
   flex-direction: column;
-  width: 280px;
-  height: 420px;
+
   border-radius: 24px;
-  margin-bottom: 56px;
-  padding: 123px 40px 20px 40px;
+
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    height: 420px;
+    padding: 123px 40px 20px 40px;
+  }
+
+  // tablet
+  @media screen and (min-width: 768px) {
+    width: 224px;
+    height: 428px;
+
+    padding: 107px 26px 20px 26px;
+  }
+  // desktop
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 535px;
+    padding: 166px 60px 60px 60px;
+  }
 }
 
 .products__item:nth-child(1) {
   background-color: #aec6a5;
-  margin-bottom: 164px;
   position: relative;
 }
 
@@ -146,7 +162,9 @@
 }
 
 .products__item:not(:last-child) {
-  margin-bottom: 164px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 164px;
+  }
 }
 
 .products__item:nth-child(1)::before {
@@ -161,8 +179,16 @@
     #d9d9d9;
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
   background-repeat: no-repeat;
-
   border: none;
+
+  @media screen and (min-width:768px) {
+   
+    }
+
+  @media screen and (min-width:1200px) {
+    width: 300px;
+    height: 300px;
+    }
 }
 .products__item:nth-child(1)::after {
   content: '';
@@ -174,8 +200,16 @@
   top: -111px;
   background-image: url(../../images/мороженное/products-3_s-@1x.png);
   background-repeat: no-repeat;
-
   border: none;
+
+  @media screen and (min-width:768px) {
+   
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 300px;
+    height: 300px;
+    }
 }
 
 .products__item:nth-child(2)::before {
@@ -190,6 +224,15 @@
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
   background-repeat: no-repeat;
   border: none;
+
+  @media screen and (min-width:768px) {
+   
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 300px;
+    height: 300px;
+    }
 }
 
 .products__item:nth-child(2)::after {
@@ -203,6 +246,15 @@
   background-image: url(../../images/мороженное/products-1_s-@1x.png);
   background-repeat: no-repeat;
   border: none;
+
+  @media screen and (min-width:768px) {
+   
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 300px;
+    height: 300px;
+    }
 }
 
 .products__item:nth-child(3)::before {
@@ -217,6 +269,15 @@
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
   background-repeat: no-repeat;
   border: none;
+
+  @media screen and (min-width:768px) {
+   
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 300px;
+    height: 300px;
+    }
 }
 
 .products__item:nth-child(3)::after {
@@ -230,27 +291,49 @@
   background-image: url(../../images/мороженное/products-2_s-@1x.png);
   background-repeat: no-repeat;
   border: none;
+
+  @media screen and (min-width:768px) {
+   
+  }
+
+  @media screen and (min-width:1200px) {
+  width: 300px;
+  height: 300px;
+  }
 }
 
 .products__subtitle {
   font-weight: 700;
   font-size: 20px;
-  line-height: 24px;
+  line-height: calc(24 / 20);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #131313;
   margin-bottom: 40px;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  line-height: calc(27 / 22);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: calc(37 / 30);
+  }
 }
 
 .products__discription {
-  width: 200px;
   font-size: 14px;
   line-height: 1.76;
   text-align: center;
   letter-spacing: 0.04em;
   color: #131313;
   margin-bottom: auto;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .product__btn {
