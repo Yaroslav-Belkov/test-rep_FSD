@@ -1887,8 +1887,17 @@ a {
   background-repeat: no-repeat;
   border: none;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products__item:nth-child(1)::before {
+    left: 12px;
+    right: 12px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .products__item:nth-child(1)::before {
+    top: -150px;
+    left: 33px;
+    right: 33px;
     width: 300px;
     height: 300px;
   }
@@ -1906,8 +1915,17 @@ a {
   background-repeat: no-repeat;
   border: none;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products__item:nth-child(1)::after {
+    left: 12px;
+    right: 12px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .products__item:nth-child(1)::after {
+    top: -167px;
+    left: 33px;
+    right: 33px;
     width: 300px;
     height: 300px;
   }
@@ -1928,8 +1946,17 @@ a {
   background-repeat: no-repeat;
   border: none;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products__item:nth-child(2)::before {
+    left: 12px;
+    right: 12px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .products__item:nth-child(2)::before {
+    top: -150px;
+    left: 33px;
+    right: 33px;
     width: 300px;
     height: 300px;
   }
@@ -1947,8 +1974,17 @@ a {
   background-repeat: no-repeat;
   border: none;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products__item:nth-child(2)::after {
+    left: 12px;
+    right: 12px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .products__item:nth-child(2)::after {
+    top: -167px;
+    left: 33px;
+    right: 33px;
     width: 300px;
     height: 300px;
   }
@@ -1968,8 +2004,17 @@ a {
   background-repeat: no-repeat;
   border: none;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products__item:nth-child(3)::before {
+    left: 12px;
+    right: 12px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .products__item:nth-child(3)::before {
+    top: -150px;
+    left: 33px;
+    right: 33px;
     width: 300px;
     height: 300px;
   }
@@ -1987,8 +2032,17 @@ a {
   background-repeat: no-repeat;
   border: none;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products__item:nth-child(3)::after {
+    left: 12px;
+    right: 12px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .products__item:nth-child(3)::after {
+    top: -167px;
+    left: 33px;
+    right: 33px;
     width: 300px;
     height: 300px;
   }
